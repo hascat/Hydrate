@@ -12,6 +12,9 @@
 ## X-Author-Server: US-Cairne
 ## X-Author-Faction: Horde
 
+## X-Curse-Project-ID: 431726
+## X-WoWI-ID: 25851
+
 ## DefaultState: Enabled
 ## LoadOnDemand: 0
 
