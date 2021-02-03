@@ -2,10 +2,11 @@ local addonName, addon = ...
 
 -- The reminder should only be shown when it's not inconvenient to the player. 
 local function AllowReminder()
+    local inCinematic = InCinematic() or IsInCinematicScene()
     local inCombat = addon.inCombat
     local inPvP = C_PvP.IsArena() or C_PvP.IsBattleground()
     local isBusy = UnitIsAFK("player") or UnitIsDND("player")
-    return not (inCombat or inPvP or isBusy)
+    return not (inCinematic or inCombat or inPvP or isBusy)
 end
 
 -- Show the reminder frame if it is not already shown.
